@@ -73,4 +73,4 @@ end
 gem "validate_url"
 gem "maxmind-geoip2"
 gem "active_model_serializers"
-gem "pagy"
+gem "redis"
