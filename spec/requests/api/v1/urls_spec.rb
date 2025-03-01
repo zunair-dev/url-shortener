@@ -48,7 +48,7 @@ RSpec.describe "Api::V1::Urls", type: :request do
       it 'returns 404' do
         expect(response).to have_http_status(:not_found)
         json_response = JSON.parse(response.body)
-        expect(json_response['error']).to eq('Record Not found')
+        expect(json_response['errors']).to eq('Record not found')
       end
     end
   end
@@ -107,7 +107,7 @@ RSpec.describe "Api::V1::Urls", type: :request do
 
         expect(response).to have_http_status(:unprocessable_entity)
         json_response = JSON.parse(response.body)
-        expect(json_response['error']).to eq('URL cannot be blank')
+        expect(json_response['errors']).to eq('URL cannot be blank')
       end
 
       it 'returns an error when URL parameter is missing' do
@@ -115,7 +115,7 @@ RSpec.describe "Api::V1::Urls", type: :request do
 
         expect(response).to have_http_status(:unprocessable_entity)
         json_response = JSON.parse(response.body)
-        expect(json_response['error']).to eq('URL cannot be blank')
+        expect(json_response['errors']).to eq('URL cannot be blank')
       end
     end
 

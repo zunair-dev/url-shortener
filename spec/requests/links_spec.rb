@@ -28,7 +28,7 @@ RSpec.describe "Links", type: :request do
         expect(mock_redis).to receive(:set).with(
           "url:#{url.slug}",
           anything,
-          hash_including(ex: 1.hour)
+          hash_including(ex: 24.hours)
         )
 
         get "/#{url.slug}"

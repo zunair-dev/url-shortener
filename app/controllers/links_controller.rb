@@ -26,7 +26,7 @@ class LinksController < ApplicationController
       # if not in cache, get from database
       @url = Url.find_by!(slug: params[:slug])
 
-      redis.set(redis_key, @url.to_json, ex: 1.hour)
+      redis.set(redis_key, @url.to_json, ex: 24.hours)
     end
   end
 
