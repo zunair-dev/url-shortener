@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_28_162051) do
+ActiveRecord::Schema[8.0].define(version: 2025_03_01_070510) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -18,7 +18,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_28_162051) do
     t.string "user_agent"
     t.string "referrer"
     t.string "ip"
-    t.string "country"
     t.integer "url_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

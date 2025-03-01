@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Url, type: :model do
   describe 'associations' do
-    it { should have_many(:statistics).dependent(:nullify) }
+    it { should have_many(:statistics) }
   end
 
   describe 'validations' do

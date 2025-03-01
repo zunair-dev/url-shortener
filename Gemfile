@@ -71,6 +71,5 @@ end
 
 # additional gems
 gem "validate_url"
-gem "maxmind-geoip2"
 gem "active_model_serializers"
 gem "redis"

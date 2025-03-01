@@ -4,7 +4,7 @@ class Url < ApplicationRecord
   MAXLEN = 10
   MINLEN = 8
 
-  has_many :statistics, dependent: :nullify
+  has_many :statistics
 
   validates :url, presence: true, url: true
   validates :slug, presence: true, uniqueness: true
