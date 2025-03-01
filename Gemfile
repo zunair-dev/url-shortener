@@ -50,6 +50,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
+  # additional gems for testing
   gem "rspec-rails"
   gem "factory_bot_rails"
   gem "faker"
@@ -67,3 +68,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# additional gems
+gem "validate_url"
+gem "maxmind-geoip2"
+gem "active_model_serializers"
+gem "pagy"
