@@ -88,9 +88,7 @@ Response:
 
 ### Get all urls
 
-```http
-  GET /api/v1/urls
-```
+**GET** `/api/v1/urls`
 
 Response:
 ```json
@@ -116,9 +114,7 @@ Response:
 
 #### Get a specific url
 
-```http
-  GET /api/v1/urls/${id}
-```
+**GET** `/api/v1/urls/${id}`
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
